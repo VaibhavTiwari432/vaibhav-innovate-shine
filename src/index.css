@@ -2,41 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Modern Portfolio Design System - Dark theme with vibrant gradients */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core dark theme inspired by reference */
+    --background: 215 28% 5%;
+    --foreground: 213 31% 91%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 215 28% 8%;
+    --card-foreground: 213 31% 91%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 215 28% 8%;
+    --popover-foreground: 213 31% 91%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary deep blue palette */
+    --primary: 213 78% 16%;
+    --primary-foreground: 213 31% 91%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Vibrant orange for CTAs and highlights */
+    --secondary: 12 88% 59%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 28% 12%;
+    --muted-foreground: 213 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 267 84% 64%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 28% 15%;
+    --input: 215 28% 12%;
+    --ring: 12 88% 59%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom gradient definitions */
+    --gradient-primary: linear-gradient(135deg, hsl(213 78% 16%), hsl(267 84% 64%));
+    --gradient-secondary: linear-gradient(135deg, hsl(12 88% 59%), hsl(35 91% 62%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 78% 20%), hsl(215 28% 8%));
+    --gradient-card: linear-gradient(145deg, hsl(215 28% 8% / 0.8), hsl(215 28% 12% / 0.9));
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 40px hsl(12 88% 59% / 0.3);
+    --shadow-card: 0 8px 32px hsl(215 28% 3% / 0.5);
+    --shadow-elegant: 0 20px 50px hsl(215 28% 3% / 0.7);
 
     --sidebar-background: 0 0% 98%;
 
