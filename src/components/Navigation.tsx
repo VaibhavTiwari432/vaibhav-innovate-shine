@@ -21,12 +21,12 @@ const Navigation = () => {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-card">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-purple-400/20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <span className="text-2xl font-bold text-white">
               VT
             </span>
           </Link>
@@ -40,8 +40,8 @@ const Navigation = () => {
                   to={item.href}
                   className={`transition-colors duration-300 text-sm font-medium px-3 py-2 rounded-md ${
                     isActive(item.href)
-                      ? "text-primary bg-primary/10"
-                      : "text-foreground hover:text-primary hover:bg-primary/5"
+                      ? "text-white bg-white/20 backdrop-blur-sm"
+                      : "text-purple-200 hover:text-white hover:bg-white/10"
                   }`}
                 >
                   {item.label}
@@ -65,15 +65,15 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background/95 backdrop-blur-md border-t border-border">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/40 backdrop-blur-md border-t border-purple-400/20">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   to={item.href}
                   className={`block px-3 py-2 text-base font-medium transition-colors duration-300 rounded-md ${
                     isActive(item.href)
-                      ? "text-primary bg-primary/10"
-                      : "text-foreground hover:text-primary hover:bg-primary/5"
+                      ? "text-white bg-white/20"
+                      : "text-purple-200 hover:text-white hover:bg-white/10"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

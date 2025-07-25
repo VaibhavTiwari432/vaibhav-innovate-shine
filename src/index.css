@@ -2,53 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modern Portfolio Design System - Light theme with professional aesthetics */
+/* Modern Portfolio Design System - Purple gradient theme inspired by reference */
 
 @layer base {
   :root {
-    /* Light theme with clean, professional colors */
-    --background: 0 0% 100%;
-    --foreground: 210 20% 25%;
+    /* Purple gradient theme matching the reference */
+    --background: 250 15% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 20% 25%;
+    --card: 250 15% 12%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 25%;
+    --popover: 250 15% 12%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Deep blue primary palette */
-    --primary: 213 78% 35%;
+    /* Purple primary palette */
+    --primary: 267 84% 64%;
     --primary-foreground: 0 0% 100%;
 
-    /* Teal for secondary actions */
-    --secondary: 174 72% 56%;
+    /* Complementary pink for accents */
+    --secondary: 320 91% 70%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 210 20% 50%;
+    --muted: 250 15% 15%;
+    --muted-foreground: 250 10% 70%;
 
-    --accent: 174 72% 56%;
+    --accent: 280 100% 70%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 40% 85%;
-    --input: 210 40% 96%;
-    --ring: 213 78% 35%;
+    --border: 250 15% 20%;
+    --input: 250 15% 15%;
+    --ring: 267 84% 64%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Light theme gradient definitions */
-    --gradient-primary: linear-gradient(135deg, hsl(213 78% 35%), hsl(174 72% 56%));
-    --gradient-secondary: linear-gradient(135deg, hsl(174 72% 56%), hsl(210 40% 96%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 40% 98%), hsl(174 72% 96%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(210 40% 98% / 0.95));
+    /* Purple gradient theme definitions */
+    --gradient-primary: linear-gradient(135deg, #8B5CF6, #A855F7, #C084FC);
+    --gradient-secondary: linear-gradient(135deg, #EC4899, #F472B6, #FBBF24);
+    --gradient-hero: linear-gradient(135deg, #1E1B4B 0%, #312E81 25%, #6366F1 50%, #8B5CF6 75%, #EC4899 100%);
+    --gradient-card: linear-gradient(145deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.2));
+    --gradient-orb: linear-gradient(135deg, rgba(139, 92, 246, 0.8), rgba(168, 85, 247, 0.6));
     
-    /* Light theme shadows */
-    --shadow-glow: 0 0 40px hsl(174 72% 56% / 0.15);
-    --shadow-card: 0 8px 32px hsl(210 20% 25% / 0.08);
-    --shadow-elegant: 0 20px 50px hsl(210 20% 25% / 0.12);
+    /* Purple theme shadows and glows */
+    --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.4);
+    --shadow-card: 0 8px 32px rgba(30, 27, 75, 0.5);
+    --shadow-elegant: 0 20px 50px rgba(30, 27, 75, 0.7);
+    --shadow-orb: 0 0 20px rgba(139, 92, 246, 0.6);
 
     --sidebar-background: 0 0% 98%;
 
