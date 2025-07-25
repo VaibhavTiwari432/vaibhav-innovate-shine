@@ -1,48 +1,57 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#services", label: "Services" },
-    { href: "#skills", label: "Skills" },
-    { href: "#mentorship", label: "Mentorship" },
-    { href: "#contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "/projects", label: "Projects" },
+    { href: "/thought-experiments", label: "Thought Experiments" },
+    { href: "/collection", label: "My Collection" },
+    { href: "/achievements", label: "Achievements" },
+    { href: "/experience", label: "Experience" },
+    { href: "/cv", label: "CV" },
+    { href: "/contact", label: "Contact" },
   ];
 
+  const isActive = (href: string) => location.pathname === href;
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-card">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <span className="text-2xl font-bold bg-gradient-secondary bg-clip-text text-transparent">
+          <Link to="/" className="flex-shrink-0">
+            <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               VT
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden lg:block">
+            <div className="ml-10 flex items-baseline space-x-6">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
-                  href={item.href}
-                  className="text-foreground hover:text-secondary transition-colors duration-300 text-sm font-medium"
+                  to={item.href}
+                  className={`transition-colors duration-300 text-sm font-medium px-3 py-2 rounded-md ${
+                    isActive(item.href)
+                      ? "text-primary bg-primary/10"
+                      : "text-foreground hover:text-primary hover:bg-primary/5"
+                  }`}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Button
               variant="ghost"
               size="sm"
@@ -55,17 +64,21 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="lg:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background/95 backdrop-blur-md border-t border-border">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
-                  href={item.href}
-                  className="text-foreground hover:text-secondary block px-3 py-2 text-base font-medium transition-colors duration-300"
+                  to={item.href}
+                  className={`block px-3 py-2 text-base font-medium transition-colors duration-300 rounded-md ${
+                    isActive(item.href)
+                      ? "text-primary bg-primary/10"
+                      : "text-foreground hover:text-primary hover:bg-primary/5"
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
