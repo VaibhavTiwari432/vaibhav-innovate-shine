@@ -57,10 +57,16 @@ const Home = () => {
 
             {/* Right Side - Orbital Elements */}
             <div className="relative flex items-center justify-center h-96 lg:h-[500px]">
-              {/* Central Element */}
-              <div className="relative z-20 bg-gradient-card backdrop-blur-sm border border-purple-400/30 rounded-2xl p-8 text-center shadow-orb">
-                <div className="text-4xl font-bold text-white mb-2">15+</div>
-                <div className="text-purple-200 text-sm">Projects & Ideas</div>
+              {/* Central Element - Photo Space */}
+              <div className="relative z-20 bg-gradient-card backdrop-blur-sm border border-purple-400/30 rounded-2xl p-2 shadow-orb">
+                <div className="w-32 h-32 bg-gradient-primary/20 rounded-xl flex items-center justify-center border border-purple-400/20">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-white/10 rounded-full mx-auto mb-2 flex items-center justify-center">
+                      <span className="text-white text-xs">Photo</span>
+                    </div>
+                    <div className="text-xs text-purple-200">Your Photo Here</div>
+                  </div>
+                </div>
               </div>
 
               {/* Orbiting Elements */}
