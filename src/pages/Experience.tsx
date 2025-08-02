@@ -89,52 +89,54 @@ const Experience = () => {
           </div>
 
           {/* Experience Timeline */}
-          <div className="space-y-8">
-            {experiences.map((experience, index) => {
-              const IconComponent = experience.icon;
-              return (
-                <div
-                  key={index}
-                  className="bg-gradient-card backdrop-blur-sm border border-purple-400/20 rounded-xl p-8 hover:shadow-orb transition-all duration-300"
-                >
-                  <div className="flex flex-col lg:flex-row gap-6">
-                    {/* Icon and Basic Info */}
-                    <div className="flex-shrink-0 lg:w-64">
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                          <IconComponent className="h-6 w-6 text-white" />
+          <div className="h-96 overflow-y-auto scrollbar-thin scrollbar-track-purple-900/20 scrollbar-thumb-purple-400/40 hover:scrollbar-thumb-purple-400/60 pr-4">
+            <div className="space-y-8">
+              {experiences.map((experience, index) => {
+                const IconComponent = experience.icon;
+                return (
+                  <div
+                    key={index}
+                    className="bg-gradient-card backdrop-blur-sm border border-purple-400/20 rounded-xl p-8 hover:shadow-orb transition-all duration-300"
+                  >
+                    <div className="flex flex-col lg:flex-row gap-6">
+                      {/* Icon and Basic Info */}
+                      <div className="flex-shrink-0 lg:w-64">
+                        <div className="flex items-center gap-4 mb-4">
+                          <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                            <IconComponent className="h-6 w-6 text-white" />
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-semibold text-white">{experience.title}</h3>
+                            <p className="text-purple-300">{experience.company}</p>
+                          </div>
                         </div>
-                        <div>
-                          <h3 className="text-xl font-semibold text-white">{experience.title}</h3>
-                          <p className="text-purple-300">{experience.company}</p>
+                        <div className="text-sm text-purple-200 bg-purple-400/10 px-3 py-1 rounded-full inline-block">
+                          {experience.period}
                         </div>
                       </div>
-                      <div className="text-sm text-purple-200 bg-purple-400/10 px-3 py-1 rounded-full inline-block">
-                        {experience.period}
-                      </div>
-                    </div>
 
-                    {/* Description and Skills */}
-                    <div className="flex-1">
-                      <p className="text-purple-200 mb-6 leading-relaxed">
-                        {experience.description}
-                      </p>
-                      
-                      <div className="flex flex-wrap gap-2">
-                        {experience.skills.map((skill, skillIndex) => (
-                          <span
-                            key={skillIndex}
-                            className="px-3 py-1 bg-gradient-secondary/20 text-purple-300 rounded-full text-sm border border-purple-400/20"
-                          >
-                            {skill}
-                          </span>
-                        ))}
+                      {/* Description and Skills */}
+                      <div className="flex-1">
+                        <p className="text-purple-200 mb-6 leading-relaxed">
+                          {experience.description}
+                        </p>
+                        
+                        <div className="flex flex-wrap gap-2">
+                          {experience.skills.map((skill, skillIndex) => (
+                            <span
+                              key={skillIndex}
+                              className="px-3 py-1 bg-gradient-secondary/20 text-purple-300 rounded-full text-sm border border-purple-400/20"
+                            >
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
           {/* Impact Stats */}
