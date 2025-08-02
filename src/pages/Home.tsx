@@ -2,6 +2,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, GraduationCap, Target, Brain, Code, Lightbulb, Users, Award, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Import all page components
+import Projects from "./Projects";
+import ThoughtExperiments from "./ThoughtExperiments";
+import Collection from "./Collection";
+import Achievements from "./Achievements";
+import Experience from "./Experience";
+import CV from "./CV";
+import Contact from "./Contact";
+
 const Home = () => {
   const orbitalElements = [
     { icon: Brain, label: "AI Projects", delay: "0s", distance: "180px" },
@@ -41,17 +50,17 @@ const Home = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-16">
-                <Link to="/projects">
+                <a href="#projects">
                   <Button size="lg" className="group bg-white text-purple-900 hover:bg-purple-100 shadow-glow">
                     Explore Projects
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
-                <Link to="/contact">
+                </a>
+                <a href="#contact">
                   <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-900">
                     Get In Touch
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -133,6 +142,35 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* All other sections as scrollable content */}
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="thought-experiments">
+        <ThoughtExperiments />
+      </section>
+
+      <section id="collection">
+        <Collection />
+      </section>
+
+      <section id="achievements">
+        <Achievements />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
+
+      <section id="cv">
+        <CV />
+      </section>
+
+      <section id="contact">
+        <Contact />
       </section>
     </div>
   );
