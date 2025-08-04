@@ -183,15 +183,15 @@ const Home = () => {
                   technologies: ["IoT", "GPS", "Python", "Arduino"]
                 }
               ].map((project, index) => (
-                <div key={index} className="bg-gradient-card backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-[1.02]">
+                <div key={index} className="bg-card/90 backdrop-blur-sm border border-primary/30 rounded-xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-[1.02]">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-foreground mb-2">
                         {project.title}
                       </h3>
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        project.status === "active" ? "bg-secondary text-background" :
-                        project.status === "completed" ? "bg-primary text-background" :
+                        project.status === "active" ? "bg-secondary text-secondary-foreground" :
+                        project.status === "completed" ? "bg-primary text-primary-foreground" :
                         "bg-muted text-muted-foreground"
                       }`}>
                         {project.status === "active" ? "Active" : 
@@ -204,7 +204,7 @@ const Home = () => {
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="px-2 py-1 bg-card border border-border rounded text-xs">
+                      <span key={techIndex} className="px-2 py-1 bg-muted/50 border border-border rounded text-xs text-foreground">
                         {tech}
                       </span>
                     ))}
@@ -258,19 +258,19 @@ const Home = () => {
                   tags: ["Quantum", "Decision Science", "Computing"]
                 }
               ].map((experiment, index) => (
-                <div key={index} className="bg-gradient-card backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-[1.02] group cursor-pointer">
+                <div key={index} className="bg-card/90 backdrop-blur-sm border border-primary/30 rounded-xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-[1.02] group cursor-pointer">
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <span className="text-xl text-background">{experiment.icon}</span>
+                      <span className="text-xl text-primary-foreground">{experiment.icon}</span>
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-foreground mb-2">
                         {experiment.title}
                       </h3>
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        experiment.status === "In Progress" ? "bg-secondary text-background" :
-                        experiment.status === "Research Phase" ? "bg-primary text-background" :
-                        experiment.status === "Conceptual" ? "bg-accent text-background" :
+                        experiment.status === "In Progress" ? "bg-secondary text-secondary-foreground" :
+                        experiment.status === "Research Phase" ? "bg-primary text-primary-foreground" :
+                        experiment.status === "Conceptual" ? "bg-accent text-accent-foreground" :
                         "bg-muted text-muted-foreground"
                       }`}>
                         {experiment.status}
@@ -282,7 +282,7 @@ const Home = () => {
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {experiment.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="px-2 py-1 bg-card border border-border rounded text-xs">
+                      <span key={tagIndex} className="px-2 py-1 bg-muted/50 border border-border rounded text-xs text-foreground">
                         {tag}
                       </span>
                     ))}
