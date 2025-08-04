@@ -151,33 +151,257 @@ const Home = () => {
       </section>
 
       {/* All other sections as scrollable content */}
-      <div id="projects" className="bg-background">
-        <Projects />
-      </div>
+      <section id="projects" className="bg-background py-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
+              Projects
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+              Innovative solutions addressing real-world challenges through technology, 
+              creativity, and systems thinking.
+            </p>
 
-      <div id="thought-experiments" className="bg-background">
-        <ThoughtExperiments />
-      </div>
+            <div className="grid gap-8">
+              {[
+                {
+                  title: "Sangillence",
+                  description: "AI-based cognitive growth and skill enhancement platform designed specifically for children's development.",
+                  status: "active",
+                  technologies: ["AI/ML", "Python", "React", "Node.js"]
+                },
+                {
+                  title: "Eco-Credits",
+                  description: "Real-time, pollution-based token trading system implementing a carbon credit model for environmental sustainability.",
+                  status: "completed",
+                  technologies: ["Blockchain", "IoT", "Python", "React"]
+                },
+                {
+                  title: "GPS-Based Traffic Management",
+                  description: "Intelligent ambulance-prioritized traffic light system for emergency vehicle navigation and urban traffic optimization.",
+                  status: "coming-soon",
+                  technologies: ["IoT", "GPS", "Python", "Arduino"]
+                }
+              ].map((project, index) => (
+                <div key={index} className="bg-gradient-card backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-[1.02]">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-foreground mb-2">
+                        {project.title}
+                      </h3>
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                        project.status === "active" ? "bg-secondary text-background" :
+                        project.status === "completed" ? "bg-primary text-background" :
+                        "bg-muted text-muted-foreground"
+                      }`}>
+                        {project.status === "active" ? "Active" : 
+                         project.status === "completed" ? "Completed" : "Coming Soon"}
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-base leading-relaxed mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="px-2 py-1 bg-card border border-border rounded text-xs">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div id="collection" className="bg-background">
-        <Collection />
-      </div>
+      <section id="thought-experiments" className="bg-background py-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
+              Thought Experiments
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+              Exploring the boundaries of possibility through creative thinking, philosophical inquiry, 
+              and innovative conceptual frameworks.
+            </p>
 
-      <div id="achievements" className="bg-background">
+            <div className="grid md:grid-cols-2 gap-8">
+              {[
+                {
+                  title: "Conscious OS",
+                  description: "Exploring the possibility of an operating system that develops self-awareness and consciousness through iterative learning and user interaction.",
+                  icon: "🧠",
+                  status: "In Progress",
+                  tags: ["AI", "Philosophy", "Systems"]
+                },
+                {
+                  title: "Loop within a Loop Paradox",
+                  description: "Investigating recursive systems and their implications on causality, time, and the nature of infinite regression in computational thinking.",
+                  icon: "∞",
+                  status: "Research Phase",
+                  tags: ["Logic", "Mathematics", "Philosophy"]
+                },
+                {
+                  title: "Empathy Algorithm",
+                  description: "Designing computational models that can genuinely understand and respond to human emotions with authentic empathy rather than simulation.",
+                  icon: "💡",
+                  status: "Conceptual",
+                  tags: ["AI", "Psychology", "Ethics"]
+                },
+                {
+                  title: "Quantum Decision Trees",
+                  description: "Applying quantum computing principles to decision-making processes, exploring superposition states in choice architecture.",
+                  icon: "⚡",
+                  status: "Theoretical",
+                  tags: ["Quantum", "Decision Science", "Computing"]
+                }
+              ].map((experiment, index) => (
+                <div key={index} className="bg-gradient-card backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-[1.02] group cursor-pointer">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <span className="text-xl text-background">{experiment.icon}</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-foreground mb-2">
+                        {experiment.title}
+                      </h3>
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                        experiment.status === "In Progress" ? "bg-secondary text-background" :
+                        experiment.status === "Research Phase" ? "bg-primary text-background" :
+                        experiment.status === "Conceptual" ? "bg-accent text-background" :
+                        "bg-muted text-muted-foreground"
+                      }`}>
+                        {experiment.status}
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-base leading-relaxed mb-4">
+                    {experiment.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {experiment.tags.map((tag, tagIndex) => (
+                      <span key={tagIndex} className="px-2 py-1 bg-card border border-border rounded text-xs">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="collection" className="bg-background py-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
+              My Collection
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+              A curated archive of creative works, spanning literature, visual media, 
+              and audio content that reflects my diverse interests and artistic journey.
+            </p>
+
+            <div className="space-y-12">
+              {[
+                {
+                  category: "Books",
+                  icon: "📚",
+                  items: [
+                    {
+                      title: "Area of Triangle with Single Side: Now Miracle Becomes Reality",
+                      description: "A mathematical exploration challenging conventional geometric principles.",
+                      type: "Mathematics",
+                      status: "Published"
+                    },
+                    {
+                      title: "Swarachit Sometimes - Volume 1",
+                      description: "First collection of original poetry exploring themes of introspection and growth.",
+                      type: "Poetry",
+                      status: "Published"
+                    }
+                  ]
+                },
+                {
+                  category: "Videos",
+                  icon: "🎥",
+                  items: [
+                    {
+                      title: "The Penumbra",
+                      description: "First-ever student film produced at IIIT Gwalior, exploring themes of identity and purpose.",
+                      type: "Film",
+                      status: "Completed"
+                    },
+                    {
+                      title: "Behind the Scenes: Making of The Penumbra",
+                      description: "Documentary-style content showcasing the filmmaking process and creative journey.",
+                      type: "Documentary",
+                      status: "Available"
+                    }
+                  ]
+                }
+              ].map((collection, collectionIndex) => (
+                <div key={collectionIndex} className="space-y-6">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                      <span className="text-lg text-background">{collection.icon}</span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground">{collection.category}</h3>
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 gap-6">
+                    {collection.items.map((item, itemIndex) => (
+                      <div key={itemIndex} className="bg-gradient-card backdrop-blur-sm border border-primary/20 rounded-xl p-6 hover:shadow-glow transition-all duration-300 hover:scale-[1.02]">
+                        <div className="flex items-start justify-between mb-2">
+                          <div className="flex-1">
+                            <h4 className="text-lg font-bold text-foreground mb-2">
+                              {item.title}
+                            </h4>
+                            <div className="flex gap-2 mb-2">
+                              <span className="px-2 py-1 bg-card border border-border rounded text-xs">
+                                {item.type}
+                              </span>
+                              <span className={`px-2 py-1 rounded text-xs font-medium ${
+                                item.status === "Published" ? "bg-primary text-background" :
+                                item.status === "Completed" ? "bg-secondary text-background" :
+                                "bg-accent text-background"
+                              }`}>
+                                {item.status}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" className="bg-background py-20 border-t border-border">
         <Achievements />
-      </div>
+      </section>
 
-      <div id="experience" className="bg-background">
+      <section id="experience" className="bg-background py-20 border-t border-border">
         <Experience />
-      </div>
+      </section>
 
-      <div id="cv" className="bg-background">
+      <section id="cv" className="bg-background py-20 border-t border-border">
         <CV />
-      </div>
+      </section>
 
-      <div id="contact" className="bg-background">
+      <section id="contact" className="bg-background py-20 border-t border-border">
         <Contact />
-      </div>
+      </section>
     </div>
   );
 };

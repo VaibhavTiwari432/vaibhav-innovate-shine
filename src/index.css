@@ -2,63 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modern Design System - Black, Blue, Green, White theme with decorative elements */
+/* Ultra Modern Design System - High Contrast Black, Electric Blue, Neon Green, Pure White */
 
 @layer base {
   :root {
-    /* Modern dark theme - Black, Blue, Green, White */
-    --background: 210 40% 3%;
-    --foreground: 0 0% 98%;
+    /* Ultra modern high-contrast theme */
+    --background: 220 30% 2%;
+    --foreground: 0 0% 100%;
 
-    --card: 210 40% 8%;
+    --card: 220 25% 5%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 210 40% 8%;
+    --popover: 220 25% 5%;
     --popover-foreground: 0 0% 98%;
 
-    /* Electric blue primary */
-    --primary: 200 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    /* Brilliant electric blue */
+    --primary: 200 100% 60%;
+    --primary-foreground: 0 0% 0%;
 
-    /* Emerald green secondary */
-    --secondary: 160 84% 39%;
-    --secondary-foreground: 0 0% 100%;
+    /* Vibrant neon green */
+    --secondary: 150 100% 45%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 210 40% 15%;
-    --muted-foreground: 215 25% 70%;
+    --muted: 220 25% 12%;
+    --muted-foreground: 220 15% 65%;
 
     /* Bright cyan accent */
-    --accent: 180 100% 50%;
-    --accent-foreground: 210 40% 8%;
+    --accent: 180 100% 60%;
+    --accent-foreground: 0 0% 0%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 90% 65%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 25% 20%;
-    --input: 210 40% 15%;
-    --ring: 200 100% 50%;
+    --border: 220 25% 15%;
+    --input: 220 25% 8%;
+    --ring: 200 100% 60%;
 
-    --radius: 1rem;
+    --radius: 1.2rem;
 
-    /* Modern gradient definitions */
-    --gradient-primary: linear-gradient(135deg, #0EA5E9, #3B82F6, #6366F1);
-    --gradient-secondary: linear-gradient(135deg, #10B981, #059669, #047857);
-    --gradient-hero: linear-gradient(135deg, #000000 0%, #1E293B 25%, #0F172A 50%, #0EA5E9 75%, #10B981 100%);
-    --gradient-card: linear-gradient(145deg, rgba(14, 165, 233, 0.1), rgba(16, 185, 129, 0.1));
-    --gradient-orb: linear-gradient(135deg, rgba(14, 165, 233, 0.8), rgba(16, 185, 129, 0.6));
-    --gradient-accent: linear-gradient(135deg, #00FFFF, #0EA5E9);
+    /* Futuristic gradient definitions */
+    --gradient-primary: linear-gradient(135deg, #0EA5E9 0%, #3B82F6 50%, #8B5CF6 100%);
+    --gradient-secondary: linear-gradient(135deg, #00FF88 0%, #00E676 50%, #1DE9B6 100%);
+    --gradient-hero: linear-gradient(135deg, #000000 0%, #0F0F23 20%, #1A1B3A 40%, #0EA5E9 70%, #00FF88 100%);
+    --gradient-card: linear-gradient(145deg, rgba(14, 165, 233, 0.15), rgba(0, 255, 136, 0.12));
+    --gradient-orb: linear-gradient(135deg, rgba(14, 165, 233, 0.9), rgba(0, 255, 136, 0.7));
+    --gradient-accent: linear-gradient(135deg, #00FFFF 0%, #0EA5E9 100%);
     
-    /* Modern shadows and glows */
-    --shadow-glow: 0 0 40px rgba(14, 165, 233, 0.3);
-    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.5);
-    --shadow-elegant: 0 20px 50px rgba(0, 0, 0, 0.7);
-    --shadow-orb: 0 0 20px rgba(14, 165, 233, 0.5);
-    --shadow-green: 0 0 30px rgba(16, 185, 129, 0.4);
+    /* Enhanced glow effects */
+    --shadow-glow: 0 0 50px rgba(14, 165, 233, 0.5);
+    --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.6);
+    --shadow-elegant: 0 25px 60px rgba(0, 0, 0, 0.8);
+    --shadow-orb: 0 0 30px rgba(14, 165, 233, 0.7);
+    --shadow-green: 0 0 40px rgba(0, 255, 136, 0.6);
 
-    /* Decorative elements */
-    --doodle-dots: radial-gradient(circle, rgba(14, 165, 233, 0.3) 2px, transparent 2px);
-    --doodle-lines: linear-gradient(45deg, transparent 49%, rgba(16, 185, 129, 0.2) 50%, transparent 51%);
-    --doodle-waves: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230EA5E9' fill-opacity='0.1'%3E%3Cpath d='M30 30c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm12 0c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* Advanced decorative patterns */
+    --doodle-dots: radial-gradient(circle, rgba(14, 165, 233, 0.4) 3px, transparent 3px);
+    --doodle-lines: linear-gradient(45deg, transparent 48%, rgba(0, 255, 136, 0.3) 50%, transparent 52%);
+    --doodle-waves: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230EA5E9' fill-opacity='0.15'%3E%3Cpath d='M40 40c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16zm16 0c0-8.837-7.163-16-16-16s-16 7.163-16 16 7.163 16 16 16 16-7.163 16-16z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
