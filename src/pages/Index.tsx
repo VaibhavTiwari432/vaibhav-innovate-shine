@@ -7,19 +7,35 @@ import SkillsSection from "@/components/SkillsSection";
 import MentorshipSection from "@/components/MentorshipSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-
+import Projects from "./Projects";
+import Achievements from "./Achievements";
+import Experience from "./Experience";
+import CV from "./CV";
+import Contact from "./Contact";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <PortfolioSection />
-      <ServicesSection />
-      <SkillsSection />
-      <MentorshipSection />
-      <ContactSection />
-      <Footer />
+
+      <Projects />
+      <section id="projects" className="min-h-screen bg-card py-20 border-t-4 border-primary">
+        <Projects />
+      </section>
+
+      <section id="achievements" className="min-h-screen bg-card py-20 border-t-4 border-primary">
+        <Achievements />
+      </section>
+
+      <section id="experience" className="min-h-screen bg-background py-20 border-t-4 border-secondary">
+        <Experience />
+      </section>
+
+      <section id="cv" className="min-h-screen bg-card py-20 border-t-4 border-accent">
+        <CV />
+      </section>
+
+      <section id="contact" className="min-h-screen bg-background py-20 border-t-4 border-primary">
+        <Contact />
+      </section>
     </div>
   );
 };

@@ -6,10 +6,6 @@ const CV = () => {
   return (
     <div className="min-h-screen pt-20 pb-12">
       {/* Animated background */}
-      <div className="fixed inset-0 bg-gradient-primary">
-        <div className="absolute inset-0 opacity-30"></div>
-      </div>
-
       <div className="relative z-10 container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -27,7 +23,7 @@ const CV = () => {
 
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Personal Information */}
-          <Card className="p-8 bg-gradient-card border-border">
+          <Card className="p-8  border-border">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h2 className="text-3xl font-bold text-white mb-2">Vaibhav Tiwari</h2>
@@ -64,7 +60,7 @@ const CV = () => {
           </Card>
 
           {/* Education */}
-          <Card className="p-8 bg-gradient-card border-border">
+          <Card className="p-8  border-border">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <div className="w-2 h-8 bg-gradient-secondary rounded-full mr-4"></div>
               Education
@@ -86,7 +82,7 @@ const CV = () => {
           </Card>
 
           {/* Key Projects */}
-          <Card className="p-8 bg-gradient-card border-border">
+          <Card className="p-8  border-border">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <div className="w-2 h-8 bg-gradient-secondary rounded-full mr-4"></div>
               Key Projects
@@ -123,7 +119,7 @@ const CV = () => {
           </Card>
 
           {/* Skills */}
-          <Card className="p-8 bg-gradient-card border-border">
+          <Card className="p-8  border-border">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <div className="w-2 h-8 bg-gradient-secondary rounded-full mr-4"></div>
               Technical Skills
@@ -196,7 +192,7 @@ const CV = () => {
           </Card>
 
           {/* Languages */}
-          <Card className="p-8 bg-gradient-card border-border">
+          <Card className="p-8  border-border">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <div className="w-2 h-8 bg-gradient-secondary rounded-full mr-4"></div>
               Languages

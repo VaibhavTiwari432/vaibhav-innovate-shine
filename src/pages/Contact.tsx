@@ -60,33 +60,11 @@ const Contact = () => {
     }
   ];
 
-  const quickActions = [
-    {
-      icon: Coffee,
-      title: "Virtual Coffee Chat",
-      description: "15-minute informal discussion about ideas and opportunities",
-      action: "Schedule Now"
-    },
-    {
-      icon: MessageCircle,
-      title: "Project Consultation",
-      description: "Detailed discussion about your project requirements and solutions",
-      action: "Book Session"
-    },
-    {
-      icon: Download,
-      title: "Download Portfolio",
-      description: "Complete portfolio with detailed case studies and achievements",
-      action: "Get PDF"
-    }
-  ];
+
 
   return (
     <div className="min-h-screen pt-20 pb-12">
-      {/* Animated background */}
-      <div className="fixed inset-0 bg-gradient-primary">
-        <div className="absolute inset-0 opacity-30"></div>
-      </div>
+
 
       <div className="relative z-10 container mx-auto px-4">
         {/* Header */}
@@ -110,24 +88,12 @@ const Contact = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          {/* Quick Actions */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {quickActions.map((action, index) => (
-              <Card key={index} className="p-6 bg-gradient-card border-border hover:bg-white/15 transition-all duration-300 group cursor-pointer">
-                <action.icon className="h-8 w-8 text-purple-300 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-lg font-semibold text-white mb-2">{action.title}</h3>
-                <p className="text-white/70 text-sm mb-4">{action.description}</p>
-                <Button variant="glass" size="sm" className="w-full">
-                  {action.action}
-                </Button>
-              </Card>
-            ))}
-          </div>
+   
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
-              <Card className="p-8 bg-gradient-card border-border">
+              <Card className="p-8 border-border">
                 <h3 className="text-2xl font-semibold mb-6 text-white flex items-center">
                   <div className="w-2 h-8 bg-gradient-secondary rounded-full mr-4"></div>
                   Get in Touch
@@ -158,9 +124,9 @@ const Contact = () => {
               </Card>
 
               {/* Social Links */}
-              <Card className="p-8 bg-gradient-card border-border">
+              <Card className="p-8  border-border">
                 <h4 className="text-xl font-semibold mb-6 text-white flex items-center">
-                  <div className="w-2 h-6 bg-gradient-secondary rounded-full mr-4"></div>
+                  <div className="w-2 h-6 rounded-full mr-4"></div>
                   Follow My Journey
                 </h4>
                 <div className="space-y-4">
@@ -184,9 +150,9 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="p-8 bg-gradient-card border-border">
+            <Card className="p-8  border-border">
               <h3 className="text-2xl font-semibold mb-6 text-white flex items-center">
-                <div className="w-2 h-8 bg-gradient-secondary rounded-full mr-4"></div>
+                <div className="w-2 h-8  rounded-full mr-4"></div>
                 Send a Message
               </h3>
               

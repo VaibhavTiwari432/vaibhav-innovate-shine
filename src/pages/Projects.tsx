@@ -53,7 +53,7 @@ const Projects = () => {
     <div className="min-h-screen bg-gradient-hero pt-32 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
+          <h1  className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center">
             Projects
           </h1>
           <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">

@@ -23,6 +23,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-hero relative overflow-hidden">
+            {/* Animated background */}
+
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating geometric shapes */}
@@ -150,288 +152,31 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PROJECTS SECTION */}
-      <section id="projects" className="min-h-screen bg-background py-20 border-t-4 border-primary">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-6xl font-bold text-primary mb-8 text-center">
-              🚀 PROJECTS
-            </h2>
-            <p className="text-xl text-foreground text-center mb-16 max-w-3xl mx-auto">
-              Innovative solutions addressing real-world challenges through technology, creativity, and systems thinking.
-            </p>
-
-            <div className="grid gap-12">
-              <div className="bg-card border-2 border-primary rounded-2xl p-8 hover:shadow-glow transition-all duration-300 hover:scale-[1.02]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-4 h-4 bg-secondary rounded-full animate-pulse"></div>
-                  <h3 className="text-3xl font-bold text-foreground">Sangillence</h3>
-                  <span className="px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-bold">ACTIVE</span>
-                </div>
-                <p className="text-foreground text-lg leading-relaxed mb-6">
-                  AI-based cognitive growth and skill enhancement platform designed specifically for children's development.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <span className="px-3 py-1 bg-primary/20 text-primary border border-primary rounded-lg text-sm font-medium">AI/ML</span>
-                  <span className="px-3 py-1 bg-primary/20 text-primary border border-primary rounded-lg text-sm font-medium">Python</span>
-                  <span className="px-3 py-1 bg-primary/20 text-primary border border-primary rounded-lg text-sm font-medium">React</span>
-                  <span className="px-3 py-1 bg-primary/20 text-primary border border-primary rounded-lg text-sm font-medium">Node.js</span>
-                </div>
-              </div>
-
-              <div className="bg-card border-2 border-primary rounded-2xl p-8 hover:shadow-glow transition-all duration-300 hover:scale-[1.02]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-4 h-4 bg-primary rounded-full"></div>
-                  <h3 className="text-3xl font-bold text-foreground">Eco-Credits</h3>
-                  <span className="px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm font-bold">COMPLETED</span>
-                </div>
-                <p className="text-foreground text-lg leading-relaxed mb-6">
-                  Real-time, pollution-based token trading system implementing a carbon credit model for environmental sustainability.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <span className="px-3 py-1 bg-secondary/20 text-secondary border border-secondary rounded-lg text-sm font-medium">Blockchain</span>
-                  <span className="px-3 py-1 bg-secondary/20 text-secondary border border-secondary rounded-lg text-sm font-medium">IoT</span>
-                  <span className="px-3 py-1 bg-secondary/20 text-secondary border border-secondary rounded-lg text-sm font-medium">Python</span>
-                  <span className="px-3 py-1 bg-secondary/20 text-secondary border border-secondary rounded-lg text-sm font-medium">React</span>
-                </div>
-              </div>
-
-              <div className="bg-card border-2 border-primary rounded-2xl p-8 hover:shadow-glow transition-all duration-300 hover:scale-[1.02]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-4 h-4 bg-muted rounded-full"></div>
-                  <h3 className="text-3xl font-bold text-foreground">GPS-Based Traffic Management</h3>
-                  <span className="px-4 py-2 bg-muted text-foreground rounded-full text-sm font-bold">COMING SOON</span>
-                </div>
-                <p className="text-foreground text-lg leading-relaxed mb-6">
-                  Intelligent ambulance-prioritized traffic light system for emergency vehicle navigation and urban traffic optimization.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <span className="px-3 py-1 bg-accent/20 text-accent border border-accent rounded-lg text-sm font-medium">IoT</span>
-                  <span className="px-3 py-1 bg-accent/20 text-accent border border-accent rounded-lg text-sm font-medium">GPS</span>
-                  <span className="px-3 py-1 bg-accent/20 text-accent border border-accent rounded-lg text-sm font-medium">Python</span>
-                  <span className="px-3 py-1 bg-accent/20 text-accent border border-accent rounded-lg text-sm font-medium">Arduino</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section id="projects" >
+        <Projects />
+      </section>
+      
+      <section id="thoughtexperiments" >
+        <ThoughtExperiments />
       </section>
 
-      {/* THOUGHT EXPERIMENTS SECTION */}
-      <section id="thought-experiments" className="min-h-screen bg-card py-20 border-t-4 border-secondary">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-6xl font-bold text-secondary mb-8 text-center">
-              🧠 THOUGHT EXPERIMENTS
-            </h2>
-            <p className="text-xl text-foreground text-center mb-16 max-w-4xl mx-auto">
-              Exploring the boundaries of possibility through creative thinking, philosophical inquiry, and innovative conceptual frameworks.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-background border-2 border-secondary rounded-2xl p-8 hover:shadow-green transition-all duration-300 hover:scale-[1.02]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center text-3xl">🧠</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground">Conscious OS</h3>
-                    <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-bold">IN PROGRESS</span>
-                  </div>
-                </div>
-                <p className="text-foreground text-base leading-relaxed mb-4">
-                  Exploring the possibility of an operating system that develops self-awareness and consciousness through iterative learning and user interaction.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/50 rounded text-xs font-medium">AI</span>
-                  <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/50 rounded text-xs font-medium">Philosophy</span>
-                  <span className="px-2 py-1 bg-primary/20 text-primary border border-primary/50 rounded text-xs font-medium">Systems</span>
-                </div>
-              </div>
-
-              <div className="bg-background border-2 border-secondary rounded-2xl p-8 hover:shadow-green transition-all duration-300 hover:scale-[1.02]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-secondary rounded-xl flex items-center justify-center text-3xl">∞</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground">Loop within a Loop Paradox</h3>
-                    <span className="px-3 py-1 bg-primary text-primary-foreground rounded-full text-xs font-bold">RESEARCH</span>
-                  </div>
-                </div>
-                <p className="text-foreground text-base leading-relaxed mb-4">
-                  Investigating recursive systems and their implications on causality, time, and the nature of infinite regression in computational thinking.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-secondary/20 text-secondary border border-secondary/50 rounded text-xs font-medium">Logic</span>
-                  <span className="px-2 py-1 bg-secondary/20 text-secondary border border-secondary/50 rounded text-xs font-medium">Mathematics</span>
-                  <span className="px-2 py-1 bg-secondary/20 text-secondary border border-secondary/50 rounded text-xs font-medium">Philosophy</span>
-                </div>
-              </div>
-
-              <div className="bg-background border-2 border-secondary rounded-2xl p-8 hover:shadow-green transition-all duration-300 hover:scale-[1.02]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center text-3xl">💡</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground">Empathy Algorithm</h3>
-                    <span className="px-3 py-1 bg-accent text-accent-foreground rounded-full text-xs font-bold">CONCEPTUAL</span>
-                  </div>
-                </div>
-                <p className="text-foreground text-base leading-relaxed mb-4">
-                  Designing computational models that can genuinely understand and respond to human emotions with authentic empathy rather than simulation.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-accent/20 text-accent border border-accent/50 rounded text-xs font-medium">AI</span>
-                  <span className="px-2 py-1 bg-accent/20 text-accent border border-accent/50 rounded text-xs font-medium">Psychology</span>
-                  <span className="px-2 py-1 bg-accent/20 text-accent border border-accent/50 rounded text-xs font-medium">Ethics</span>
-                </div>
-              </div>
-
-              <div className="bg-background border-2 border-secondary rounded-2xl p-8 hover:shadow-green transition-all duration-300 hover:scale-[1.02]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center text-3xl">⚡</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground">Quantum Decision Trees</h3>
-                    <span className="px-3 py-1 bg-muted text-foreground rounded-full text-xs font-bold">THEORETICAL</span>
-                  </div>
-                </div>
-                <p className="text-foreground text-base leading-relaxed mb-4">
-                  Applying quantum computing principles to decision-making processes, exploring superposition states in choice architecture.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-muted/30 text-foreground border border-muted rounded text-xs font-medium">Quantum</span>
-                  <span className="px-2 py-1 bg-muted/30 text-foreground border border-muted rounded text-xs font-medium">Decision Science</span>
-                  <span className="px-2 py-1 bg-muted/30 text-foreground border border-muted rounded text-xs font-medium">Computing</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section id="collection" >
+        <Collection />
       </section>
 
-      {/* MY COLLECTION SECTION */}
-      <section id="collection" className="min-h-screen bg-background py-20 border-t-4 border-accent">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-6xl font-bold text-accent mb-8 text-center">
-              📚 MY COLLECTION
-            </h2>
-            <p className="text-xl text-foreground text-center mb-16 max-w-4xl mx-auto">
-              A curated archive of creative works, spanning literature, visual media, and audio content that reflects my diverse interests and artistic journey.
-            </p>
-
-            <div className="space-y-16">
-              {/* Books Section */}
-              <div>
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center text-2xl">📚</div>
-                  <h3 className="text-4xl font-bold text-primary">Books</h3>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-card border-2 border-primary rounded-2xl p-6 hover:shadow-glow transition-all duration-300">
-                    <h4 className="text-xl font-bold text-foreground mb-3">
-                      Area of Triangle with Single Side: Now Miracle Becomes Reality
-                    </h4>
-                    <div className="flex gap-3 mb-3">
-                      <span className="px-3 py-1 bg-primary/20 text-primary border border-primary rounded-lg text-sm">Mathematics</span>
-                      <span className="px-3 py-1 bg-primary text-primary-foreground rounded-lg text-sm font-bold">PUBLISHED</span>
-                    </div>
-                    <p className="text-foreground text-sm leading-relaxed">
-                      A mathematical exploration challenging conventional geometric principles.
-                    </p>
-                  </div>
-
-                  <div className="bg-card border-2 border-primary rounded-2xl p-6 hover:shadow-glow transition-all duration-300">
-                    <h4 className="text-xl font-bold text-foreground mb-3">
-                      Swarachit Sometimes - Volume 1
-                    </h4>
-                    <div className="flex gap-3 mb-3">
-                      <span className="px-3 py-1 bg-secondary/20 text-secondary border border-secondary rounded-lg text-sm">Poetry</span>
-                      <span className="px-3 py-1 bg-primary text-primary-foreground rounded-lg text-sm font-bold">PUBLISHED</span>
-                    </div>
-                    <p className="text-foreground text-sm leading-relaxed">
-                      First collection of original poetry exploring themes of introspection and growth.
-                    </p>
-                  </div>
-
-                  <div className="bg-card border-2 border-primary rounded-2xl p-6 hover:shadow-glow transition-all duration-300">
-                    <h4 className="text-xl font-bold text-foreground mb-3">
-                      Swarachit Sometimes - Volume 2
-                    </h4>
-                    <div className="flex gap-3 mb-3">
-                      <span className="px-3 py-1 bg-secondary/20 text-secondary border border-secondary rounded-lg text-sm">Poetry</span>
-                      <span className="px-3 py-1 bg-primary text-primary-foreground rounded-lg text-sm font-bold">PUBLISHED</span>
-                    </div>
-                    <p className="text-foreground text-sm leading-relaxed">
-                      Second poetry collection delving into societal observations and personal reflections.
-                    </p>
-                  </div>
-
-                  <div className="bg-card border-2 border-primary rounded-2xl p-6 hover:shadow-glow transition-all duration-300">
-                    <h4 className="text-xl font-bold text-foreground mb-3">
-                      Swarachit Sometimes - Volume 3
-                    </h4>
-                    <div className="flex gap-3 mb-3">
-                      <span className="px-3 py-1 bg-secondary/20 text-secondary border border-secondary rounded-lg text-sm">Poetry</span>
-                      <span className="px-3 py-1 bg-primary text-primary-foreground rounded-lg text-sm font-bold">PUBLISHED</span>
-                    </div>
-                    <p className="text-foreground text-sm leading-relaxed">
-                      Latest poetry collection focusing on technology, humanity, and future possibilities.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Videos Section */}
-              <div>
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 bg-gradient-secondary rounded-xl flex items-center justify-center text-2xl">🎥</div>
-                  <h3 className="text-4xl font-bold text-secondary">Videos</h3>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-card border-2 border-secondary rounded-2xl p-6 hover:shadow-green transition-all duration-300">
-                    <h4 className="text-xl font-bold text-foreground mb-3">
-                      The Penumbra
-                    </h4>
-                    <div className="flex gap-3 mb-3">
-                      <span className="px-3 py-1 bg-accent/20 text-accent border border-accent rounded-lg text-sm">Film</span>
-                      <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-lg text-sm font-bold">COMPLETED</span>
-                    </div>
-                    <p className="text-foreground text-sm leading-relaxed">
-                      First-ever student film produced at IIIT Gwalior, exploring themes of identity and purpose.
-                    </p>
-                  </div>
-
-                  <div className="bg-card border-2 border-secondary rounded-2xl p-6 hover:shadow-green transition-all duration-300">
-                    <h4 className="text-xl font-bold text-foreground mb-3">
-                      Behind the Scenes: Making of The Penumbra
-                    </h4>
-                    <div className="flex gap-3 mb-3">
-                      <span className="px-3 py-1 bg-primary/20 text-primary border border-primary rounded-lg text-sm">Documentary</span>
-                      <span className="px-3 py-1 bg-accent text-accent-foreground rounded-lg text-sm font-bold">AVAILABLE</span>
-                    </div>
-                    <p className="text-foreground text-sm leading-relaxed">
-                      Documentary-style content showcasing the filmmaking process and creative journey.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="achievements" className="min-h-screen bg-card py-20 border-t-4 border-primary">
+      <section id="achievements" >
         <Achievements />
       </section>
 
-      <section id="experience" className="min-h-screen bg-background py-20 border-t-4 border-secondary">
+      <section id="experience">
         <Experience />
       </section>
 
-      <section id="cv" className="min-h-screen bg-card py-20 border-t-4 border-accent">
+      <section id="cv" >
         <CV />
       </section>
 
-      <section id="contact" className="min-h-screen bg-background py-20 border-t-4 border-primary">
+      <section id="contact" >
         <Contact />
       </section>
     </div>
