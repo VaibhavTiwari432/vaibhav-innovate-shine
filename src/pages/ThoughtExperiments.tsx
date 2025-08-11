@@ -18,20 +18,7 @@ const ThoughtExperiments = () => {
       status: "Research Phase",
       tags: ["Logic", "Mathematics", "Philosophy"]
     },
-    {
-      title: "Empathy Algorithm",
-      description: "Designing computational models that can genuinely understand and respond to human emotions with authentic empathy rather than simulation.",
-      icon: Lightbulb,
-      status: "Conceptual",
-      tags: ["AI", "Psychology", "Ethics"]
-    },
-    {
-      title: "Quantum Decision Trees",
-      description: "Applying quantum computing principles to decision-making processes, exploring superposition states in choice architecture.",
-      icon: Zap,
-      status: "Theoretical",
-      tags: ["Quantum", "Decision Science", "Computing"]
-    }
+    
   ];
 
   const getStatusColor = (status: string) => {

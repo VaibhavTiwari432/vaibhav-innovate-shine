@@ -10,6 +10,8 @@ import Achievements from "./Achievements";
 import Experience from "./Experience";
 import CV from "./CV";
 import Contact from "./Contact";
+import baibhavImg from '../assets/vaibhav.jpg';
+import PhotographsSection from '../components/PhotographsSection';
 
 const Home = () => {
   const orbitalElements = [
@@ -20,6 +22,8 @@ const Home = () => {
     { icon: Award, label: "Achievements", delay: "12s", distance: "240px" },
     { icon: BookOpen, label: "Publications", delay: "15s", distance: "190px" },
   ];
+
+
 
   return (
     <div className="min-h-screen bg-gradient-hero relative overflow-hidden">
@@ -76,13 +80,12 @@ const Home = () => {
             <div className="relative flex items-center justify-center h-96 lg:h-[500px]">
               {/* Central Element - Photo Space */}
               <div className="relative z-20 bg-gradient-card backdrop-blur-sm border border-primary/30 rounded-2xl p-2 shadow-glow">
-                <div className="w-32 h-32 bg-card/50 rounded-xl flex items-center justify-center border border-primary/20">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full mx-auto mb-2 flex items-center justify-center">
-                      <span className="text-foreground text-xs">Photo</span>
-                    </div>
-                    <div className="text-xs text-muted-foreground">Your Photo Here</div>
-                  </div>
+                <div className="w-32 h-32 bg-card/50 rounded-xl flex items-center justify-center border border-primary/20 p-0">
+                  <img
+                    src={baibhavImg}
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -163,6 +166,8 @@ const Home = () => {
       <section id="collection" >
         <Collection />
       </section>
+
+      <PhotographsSection />
 
       <section id="achievements" >
         <Achievements />
