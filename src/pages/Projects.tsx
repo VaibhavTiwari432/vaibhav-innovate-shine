@@ -10,8 +10,8 @@ const Projects = () => {
       description: "AI-based cognitive growth and skill enhancement platform designed specifically for children's development.",
       status: "active",
       technologies: ["AI/ML", "Python", "React", "Node.js"],
-      link: "#",
-      github: "#"
+      link: "https://sangillence.com/home",
+      github: "https://github.com/princekr969/Sangillence"
     },
     {
       title: "Eco-Credits",
@@ -91,11 +91,17 @@ const Projects = () => {
                   <div className="flex gap-3">
                     {project.status !== "coming-soon" ? (
                       <>
-                        <Button size="sm" className="flex items-center gap-2">
+                        <Button 
+                          size="sm" 
+                          className="flex items-center gap-2"
+                          onClick={() => window.open(project.link, '_blank')}
+                        >
                           <ExternalLink className="h-4 w-4" />
                           Learn More
                         </Button>
-                        <Button variant="outline" size="sm" className="flex items-center gap-2">
+                        <Button variant="outline" size="sm" className="flex items-center gap-2"
+                          onClick={() => window.open(project.github, '_blank')}
+                        >
                           <Github className="h-4 w-4" />
                           GitHub
                         </Button>

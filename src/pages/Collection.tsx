@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Book, Video, Camera, Mic, ExternalLink, Download } from "lucide-react";
+import { link } from "fs";
 
 const Collection = () => {
   const collections = [
@@ -13,25 +14,29 @@ const Collection = () => {
           title: "Area of Triangle with Single Side: Now Miracle Becomes Reality",
           description: "A mathematical exploration challenging conventional geometric principles.",
           type: "Mathematics",
-          status: "Published"
+          status: "Published",
+          link: "https://amzn.in/d/d2LC8zO"
         },
         {
           title: "Swarachit Sometimes - Volume 1",
           description: "First collection of original poetry exploring themes of introspection and growth.",
           type: "Poetry",
-          status: "Published"
+          status: "Published",
+          link: "https://amzn.in/d/aBq0sfr"
         },
         {
           title: "Swarachit Sometimes - Volume 2",
           description: "Second poetry collection delving into societal observations and personal reflections.",
           type: "Poetry",
-          status: "Published"
+          status: "Published",
+          link: "https://amzn.in/d/96U4KYc"
         },
         {
           title: "Swarachit Sometimes - Volume 3",
           description: "Latest poetry collection focusing on technology, humanity, and future possibilities.",
           type: "Poetry",
-          status: "Published"
+          status: "Published",
+          link: "https://amzn.in/d/dKpLnR8"
         }
       ]
     },
@@ -43,7 +48,8 @@ const Collection = () => {
           title: "The Penumbra",
           description: "First-ever student film produced at IIIT Gwalior, exploring themes of identity and purpose.",
           type: "Film",
-          status: "Completed"
+          status: "Completed",
+          link: "https://youtu.be/XvgI2aeU0aU?si=y93UxoF32WYkpSzp"
         },
         {
           title: "Behind the Scenes: Making of The Penumbra",
@@ -58,55 +64,9 @@ const Collection = () => {
           status: "Ongoing"
         }
       ]
-    },
-    {
-      category: "Photographs",
-      icon: Camera,
-      items: [
-        {
-          title: "Urban Stories",
-          description: "Street photography capturing the essence of city life and human interactions.",
-          type: "Street Photography",
-          status: "Gallery"
-        },
-        {
-          title: "Natural Perspectives",
-          description: "Landscape and nature photography exploring the beauty of the natural world.",
-          type: "Nature",
-          status: "Gallery"
-        },
-        {
-          title: "Portrait Studies",
-          description: "Character studies and artistic portraits showcasing human emotion and expression.",
-          type: "Portraits",
-          status: "Gallery"
-        }
-      ]
-    },
-    {
-      category: "Audio",
-      icon: Mic,
-      items: [
-        {
-          title: "Poetry Recitations",
-          description: "Audio recordings of original poetry performances and spoken word pieces.",
-          type: "Poetry",
-          status: "Available"
-        },
-        {
-          title: "Technical Talks",
-          description: "Recorded presentations on AI, technology trends, and innovation strategies.",
-          type: "Presentations",
-          status: "Available"
-        },
-        {
-          title: "Philosophical Musings",
-          description: "Informal discussions and thoughts on consciousness, ethics, and human nature.",
-          type: "Discussions",
-          status: "Podcast"
-        }
-      ]
     }
+  
+
   ];
 
   const getStatusColor = (status: string) => {
@@ -173,7 +133,12 @@ const Collection = () => {
                         </CardHeader>
                         <CardContent>
                           <div className="flex gap-2">
-                            <Button size="sm" variant="outline" className="flex items-center gap-2">
+                            <Button 
+                              size="sm" 
+                              variant="outline" 
+                              className="flex items-center gap-2"
+                              onClick={() => window.open(item.link, '_blank')}
+                            >
                               <ExternalLink className="h-3 w-3" />
                               View
                             </Button>
