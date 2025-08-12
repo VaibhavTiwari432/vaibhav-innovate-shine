@@ -27,14 +27,14 @@ const Achievements = () => {
       icon: Globe,
       title: "James Dyson Award Entry",
       description: "Eco-Credits: Token-based pollution penalty and incentive model, globally published",
-      year: "2024",
+      year: "2025",
       category: "Innovation"
     },
     {
       icon: BookOpen,
       title: "Mathematical Discovery",
       description: "Independently solved 'The Infinite product ratio of all even no. to all odd numbers' - found alternative form of established mathematics",
-      year: "2024",
+      year: "2025",
       category: "Research"
     },
     {

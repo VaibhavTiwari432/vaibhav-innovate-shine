@@ -37,11 +37,11 @@ const CV = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-purple-300" />
-                  <span className="text-white">vaibhav.tiwari@iiitm.ac.in</span>
+                  <span className="text-white">vt1445388@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-purple-300" />
-                  <span className="text-white">+91 98765 43210</span>
+                  <span className="text-white">+91 63076 16741</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-purple-300" />

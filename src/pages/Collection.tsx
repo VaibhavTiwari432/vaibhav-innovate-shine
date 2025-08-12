@@ -51,18 +51,7 @@ const Collection = () => {
           status: "Completed",
           link: "https://youtu.be/XvgI2aeU0aU?si=y93UxoF32WYkpSzp"
         },
-        {
-          title: "Behind the Scenes: Making of The Penumbra",
-          description: "Documentary-style content showcasing the filmmaking process and creative journey.",
-          type: "Documentary",
-          status: "Available"
-        },
-        {
-          title: "Public Speaking Highlights",
-          description: "Collection of talks and presentations on technology, innovation, and leadership.",
-          type: "Talks",
-          status: "Ongoing"
-        }
+        
       ]
     }
   
