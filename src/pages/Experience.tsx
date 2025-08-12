@@ -6,7 +6,7 @@ const Experience = () => {
       icon: Briefcase,
       title: "Product Intern",
       company: "Nani's Bilona Ghee",
-      period: "2024",
+      period: "2025",
       description: "Led outreach initiatives and enhanced product visibility through strategic marketing campaigns and customer engagement.",
       skills: ["Product Strategy", "Marketing", "Customer Outreach"]
     },
@@ -22,7 +22,7 @@ const Experience = () => {
       icon: GraduationCap,
       title: "Academic Interview Intern",
       company: "Newton School of Technology",
-      period: "2024",
+      period: "2025",
       description: "Enhanced admission processes for the new-age institute by assessing, mentoring, and understanding students for overall institutional improvement.",
       skills: ["Interview Assessment", "Mentoring", "Educational Strategy"]
     },
@@ -30,7 +30,7 @@ const Experience = () => {
       icon: Megaphone,
       title: "Public Relations Head",
       company: "Infotsav - IIIT Gwalior",
-      period: "2023-2024",
+      period: "2024",
       description: "Led PR initiatives for IIIT Gwalior's premier tech fest, managing communications and outreach strategies.",
       skills: ["Public Relations", "Event Management", "Communication"]
     },
@@ -38,7 +38,7 @@ const Experience = () => {
       icon: Users,
       title: "District Olympiad Organizer",
       company: "Independent Initiative",
-      period: "2023",
+      period: "2024",
       description: "Organized district-level school Olympiad reaching 50+ schools, fostering academic competition and excellence.",
       skills: ["Event Organization", "Educational Outreach", "Leadership"]
     },
@@ -46,7 +46,7 @@ const Experience = () => {
       icon: BookOpen,
       title: "Teacher → Executive",
       company: "SGM College Club",
-      period: "2022-2024",
+      period: "2023-2025",
       description: "Served underprivileged students for 1 year as teacher, later promoted to executive role for exceptional service and impact.",
       skills: ["Teaching", "Community Service", "Leadership Development"]
     },
@@ -54,7 +54,7 @@ const Experience = () => {
       icon: Brain,
       title: "Founder & Researcher",
       company: "Sangillence",
-      period: "2024 - Present",
+      period: "2025 - Present",
       description: "Currently testing concepts for AI-powered cognitive development platform. Leading SOBO'25: India's First AI-Powered Open Book Olympiad with 10+ schools registered.",
       skills: ["AI Development", "Educational Innovation", "Startup Leadership"]
     },
@@ -62,8 +62,8 @@ const Experience = () => {
       icon: Lightbulb,
       title: "Research Collaborator",
       company: "Dr. Rajan Chaudhary",
-      period: "2024 - Present",
-      description: "Currently working on 'The Unified Theory of Consciousness as an OS' - exploring consciousness through computational frameworks.",
+      period: "2025 - Present",
+      description: "Currently working on 'Etha Ai - Ethical, Transcendent, Holistic, Autonomous Artificial Intelligence Systems' - exploring consciousness through computational frameworks.",
       skills: ["Research", "Consciousness Studies", "Theoretical Framework"]
     }
   ];

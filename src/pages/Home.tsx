@@ -57,7 +57,7 @@ const Home = () => {
               </p>
               <p className="text-lg text-muted-foreground max-w-2xl mb-12 leading-relaxed">
                 A system thinker, technologist, and creative innovator focused on societal problem-solving 
-                using systems thinking, technology, and creativity. Currently pursuing an Integrated B.Tech IT + MBA 
+                using systems thinking, technology, and creativity. Currently pursuing an Integrated Post Graduate in Masters of Business Administration 
                 from IIIT Gwalior.
               </p>
               

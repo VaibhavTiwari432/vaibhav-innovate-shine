@@ -18,16 +18,16 @@ const Projects = () => {
       description: "Real-time, pollution-based token trading system implementing a carbon credit model for environmental sustainability.",
       status: "completed",
       technologies: ["Blockchain", "IoT", "Python", "React"],
-      link: "#",
+      link: "https://www.jamesdysonaward.org/2025/project/eco-credits",
       github: "#"
     },
     {
       title: "GPS-Based Traffic Management",
       description: "Intelligent ambulance-prioritized traffic light system for emergency vehicle navigation and urban traffic optimization.",
-      status: "coming-soon",
+      status: "completed",
       technologies: ["IoT", "GPS", "Python", "Arduino"],
-      link: "#",
-      github: "#"
+      link: "https://github.com/VaibhavTiwari432/GPS-Traffic-Lights",
+      github: "https://github.com/VaibhavTiwari432/GPS-Traffic-Lights"
     }
   ];
 
