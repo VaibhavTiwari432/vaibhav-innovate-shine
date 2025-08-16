@@ -29,8 +29,7 @@ const PhotographsSection = () => {
           <div className="bg-gradient-card backdrop-blur-sm p-6 rounded-xl border border-primary/20 flex flex-col justify-center">
             <h3 className="text-xl font-semibold mb-3 text-foreground">A Few Moments</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Captured snapshots that reflect my journey, experiences, and the places and people that inspire me. 
-              These four photographs share a single story: curiosity, exploration, and a passion for learning.
+              From the quantum dance of light splitting into waves, to the VIBGYOR beauty of visible colors—everything truly exists only in the moment you awaken to its existence.
             </p>
           </div>
         </div>
