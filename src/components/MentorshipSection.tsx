@@ -156,7 +156,7 @@ const MentorshipSection = () => {
             <Button 
               variant="hero" 
               size="lg"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              
             >
               Start Your Mentorship Journey
             </Button>

@@ -125,7 +125,7 @@ const ServicesSection = () => {
             <Button 
               variant="hero" 
               size="lg"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              
             >
               Get in Touch
               <ArrowRight className="ml-2 h-5 w-5" />

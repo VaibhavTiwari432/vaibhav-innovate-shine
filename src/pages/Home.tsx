@@ -9,7 +9,7 @@ import Collection from "./Collection";
 import Achievements from "./Achievements";
 import Experience from "./Experience";
 import CV from "./CV";
-import Contact from "./Contact";
+
 import baibhavImg from '../assets/vaibhav.jpg';
 import PhotographsSection from '../components/PhotographsSection';
 
@@ -68,11 +68,7 @@ const Home = () => {
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
-                <a href="#contact">
-                  <Button variant="outline" size="lg" className="border-secondary text-secondary hover:bg-secondary hover:text-background">
-                    Get In Touch
-                  </Button>
-                </a>
+
               </div>
             </div>
 
@@ -181,9 +177,7 @@ const Home = () => {
         <CV />
       </section>
 
-      <section id="contact" >
-        <Contact />
-      </section>
+
     </div>
   );
 };
