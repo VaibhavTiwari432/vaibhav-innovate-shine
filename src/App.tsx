@@ -11,7 +11,7 @@ import Collection from "./pages/Collection";
 import Achievements from "./pages/Achievements";
 import Experience from "./pages/Experience";
 import CV from "./pages/CV";
-import Contact from "./pages/Contact";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,7 +32,7 @@ const App = () => (
             <Route path="/achievements" element={<Achievements />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/cv" element={<CV />} />
-            <Route path="/contact" element={<Contact />} />
+    
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

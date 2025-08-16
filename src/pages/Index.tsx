@@ -5,13 +5,13 @@ import PortfolioSection from "@/components/PortfolioSection";
 import ServicesSection from "@/components/ServicesSection";
 import SkillsSection from "@/components/SkillsSection";
 import MentorshipSection from "@/components/MentorshipSection";
-import ContactSection from "@/components/ContactSection";
+
 import Footer from "@/components/Footer";
 import Projects from "./Projects";
 import Achievements from "./Achievements";
 import Experience from "./Experience";
 import CV from "./CV";
-import Contact from "./Contact";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -33,9 +33,7 @@ const Index = () => {
         <CV />
       </section>
 
-      <section id="contact" className="min-h-screen bg-background py-20 border-t-4 border-primary">
-        <Contact />
-      </section>
+
     </div>
   );
 };

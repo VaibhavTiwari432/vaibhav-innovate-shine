@@ -29,7 +29,7 @@ const CV = () => {
                 <h2 className="text-3xl font-bold text-white mb-2">Vaibhav Tiwari</h2>
                 <p className="text-xl text-purple-200 mb-4">System Thinker & Technologist</p>
                 <p className="text-white/80 leading-relaxed">
-                  Creative innovator pursuing Integrated B.Tech IT + MBA from IIIT Gwalior. 
+                  Creative innovator pursuing Integrated Integrated Masters of Business Administration from IIIT Gwalior. 
                   Passionate about AI, environmental sustainability, and solving societal problems 
                   through systems thinking and technology.
                 </p>
@@ -69,14 +69,14 @@ const CV = () => {
               <div className="border-l-2 border-purple-400/30 pl-6 pb-6">
                 <h4 className="text-xl font-semibold text-white">Integrated B.Tech IT + MBA</h4>
                 <p className="text-purple-200">IIIT Gwalior</p>
-                <p className="text-white/60">2022 - 2027 (Expected)</p>
-                <p className="text-white/80 mt-2">CGPA: 8.7/10</p>
+                <p className="text-white/60">2023 - 2028 </p>
+                <p className="text-white/80 mt-2">CGPA: 7.9/10</p>
               </div>
               <div className="border-l-2 border-purple-400/30 pl-6">
                 <h4 className="text-xl font-semibold text-white">Senior Secondary Education</h4>
                 <p className="text-purple-200">CBSE Board</p>
-                <p className="text-white/60">2021 - 2022</p>
-                <p className="text-white/80 mt-2">Percentage: 95.2% | Top 0.1% in Computer Science</p>
+                <p className="text-white/60">2022</p>
+                <p className="text-white/80 mt-2">Percentage: 94.2% | Top 0.1% in Computer Science</p>
               </div>
             </div>
           </Card>
@@ -119,7 +119,7 @@ const CV = () => {
           </Card>
 
           {/* Skills */}
-          <Card className="p-8  border-border">
+          {/* <Card className="p-8  border-border">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <div className="w-2 h-8 bg-gradient-secondary rounded-full mr-4"></div>
               Technical Skills
@@ -189,7 +189,7 @@ const CV = () => {
                 </div>
               </div>
             </div>
-          </Card>
+          </Card> */}
 
           {/* Languages */}
           <Card className="p-8  border-border">
@@ -210,7 +210,7 @@ const CV = () => {
           </Card>
 
           {/* Call to Action */}
-          <div className="text-center pt-8">
+          {/* <div className="text-center pt-8">
             <p className="text-white/80 mb-6 text-lg">
               Interested in collaboration or want to learn more about my work?
             </p>
@@ -224,7 +224,7 @@ const CV = () => {
                 Contact Me
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

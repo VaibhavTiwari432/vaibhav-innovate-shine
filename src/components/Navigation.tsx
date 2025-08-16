@@ -15,7 +15,7 @@ const Navigation = () => {
     { href: "#achievements", label: "Achievements" },
     { href: "#experience", label: "Experience" },
     { href: "#cv", label: "CV" },
-    { href: "#contact", label: "Contact" },
+    
   ];
 
   const handleNavClick = (href: string) => {
